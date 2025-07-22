@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 1% auto;
+    width: 42%;
+    text-align: center;
+    padding: 50px ;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 500;
+}
+p{
+    margin: 10px;
+    color: gray;
+}
+.container{
+    max-width: 1200px;
+    position: relative;
+    /* background-color: rgba(143, 153, 51, 0.589); */
+    /* display: flex; */
+    align-items: center;
+    padding: 20px 0px;
+    margin-bottom: 50px;
+}
+.container .left{
+    width: 2px;
+    background-color: black;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 35%;
+    margin-left: 6.75px;
+}
+.container .right{
+    width: 100%;
+}
+.button button{
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 7px;
+
+}
+.item {
+    /* max-width: 1200px; */
+    position: relative;
+    /* background-color: rgba(143, 153, 51, 0.589); */
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px 0 ;
+}
+.item .day{
+    width: 35%;
+    text-align: end;
+    padding: 0 25px;
+    color: gray;
+    /* margin: 10px; */
+    /* background-color: red; */
+}
+.item .content{
+    text-align: start;
+    padding: 0 20px;
+    font-weight: 500;
+}
+.item .point{
+    width: 15px;
+    height: 15px;
+    content: "";
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    /* left: 30%; */
+    z-index: 1;
+}
+
+.container .right .item .content{
+    width: 60%;
+        /* margin: 10px; */
+        /* background-color: yellow; */
+}
+.container .stick{
+    height: 100%;
+
+}
