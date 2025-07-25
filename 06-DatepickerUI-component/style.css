@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 100vh;           /* full screen height */
+    flex-direction: column;
+}
+.container {
+    width: 20%;
+    /* text-align: center; */
+}
+.container input,
+.container i{
+    font-size: large;
+}
+.calendar_top{
+    border: 1px solid black;
+}
+.calendar_top span{
+    margin: 0px 20px;
+}
+/* this is css for calendar */
+.calendar {
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    width: 75%;
+}
+.calendar i{
+    font-size: x-large;
+}
+.day_in_weak{
+    display: grid;
+grid-template-columns: repeat(7, 1fr); /* 7 cột đều nhau */
+
+}
+.calendar_bottom{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 cột đều nhau */
+  grid-template-rows: repeat(6, 10px);  /* 5 hàng, mỗi hàng 100px */
+  gap: 10px 0px;
+  max-width: 1000px;
+margin: auto;
+    border: 1px solid black;
+}
+.calendar_bottom div{
+
+}

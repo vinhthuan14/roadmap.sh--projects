@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatePicker UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <input type="datetime" placeholder="dd/mm/yyyy">
+        <i class="fa fa-calendar" aria-hidden="true"  style="cursor: pointer;"></i>
+        <div class="calendar">
+            <div class="calendar_top">
+                <i class="fa-solid fa-caret-left"></i>
+                <span> December, 2022</span>
+                <i class="fa-solid fa-caret-right"></i>
+                <div class="day_in_weak">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>T</div>
+                    <div>W</div>
+                    <div>T</div>
+                    <div>F</div>
+                    <div>S</div>
+                </div>
+            </div>
+            <div class="calendar_bottom" id="calendar_bottom">
+            </div>
+        </div>
+    </div>
+    </div>
+<script>
+    const container = document.getElementById("calendar_bottom")
+    for (let i =1; i<=35; i++){
+        const div= document.createElement("div");
+        if (i<31) {
+            div.textContent=i;
+        } else {
+            div.textContent="";
+        }
+        container.appendChild(div);
+    }
+</script>
+</body>
+</html>
